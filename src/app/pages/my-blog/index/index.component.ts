@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { NzCardModule } from 'ng-zorro-antd/card';
 
 @Component({
   selector: 'app-index',
   standalone: true,
-  imports: [],
+  imports: [NzCardModule],
   templateUrl: './index.component.html',
   styleUrl: './index.component.scss'
 })
