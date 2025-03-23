@@ -1,1 +1,21 @@
 <p>article works!</p>
+<!-- <ngx-extended-pdf-viewer
+[src]="pdfSrc"
+[height]="'auto'"
+[textLayer]="true"
+[showHandToolButton]="true"
+[filenameForDownload]="'Public Domain.pdf'">
+</ngx-extended-pdf-viewer> -->
+
+<!-- <ngx-extended-pdf-viewer [src]="pdfSrc"></ngx-extended-pdf-viewer> -->
+
+<ngx-extended-pdf-viewer
+  #pdfViewer
+  [src]="pdfSrc"
+  [contextMenuAllowed]="false"
+  [enablePrint]="false"
+  [showSidebarButton]="false"
+  [showOpenFileButton]="false"
+  [showSecondaryToolbarButton]="false"
+  height="80vh"
+></ngx-extended-pdf-viewer>
